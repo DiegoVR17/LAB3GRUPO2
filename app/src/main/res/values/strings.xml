@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Laboratorio3</string>
+    <string name="lado1">Escriba el valor del lado 1</string>
+    <string name="lado2">Escriba el valor del lado 2</string>
+    <string name="lado3">Escriba el valor del lado 3</string>
+    <string name="calcular">Calcular perimetro</string>
+    <string name="perimetro">"Perimetro = "</string>
 </resources>

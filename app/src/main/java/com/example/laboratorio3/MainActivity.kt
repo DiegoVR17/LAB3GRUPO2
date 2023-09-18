@@ -27,17 +27,31 @@ class MainActivity : AppCompatActivity() {
 
         mainViewModel.perimeter.observe(this,perimeterObserver)
 
+        val resetObserver = Observer<String>{reset ->
+            mainBinding.TextInputEditTextL1.setText(reset)
+            mainBinding.TextInputEditTextL2.setText(reset)
+            mainBinding.TextInputEditTextL3.setText(reset)
+        }
+
+        mainViewModel.reset.observe(this,resetObserver)
+
         val errorMsgObserver = Observer<String>{errorMsg ->
             Snackbar.make(view,errorMsg, Snackbar.LENGTH_INDEFINITE)
                 .setAction("Continuar"){}
                 .show()
         }
+
+
         mainViewModel.errorMsg.observe(this,errorMsgObserver)
 
         mainBinding.buttonCalcu.setOnClickListener {
             mainViewModel.calculatePerimeter(mainBinding.TextInputEditTextL1.text.toString(),
                 mainBinding.TextInputEditTextL2.text.toString(),
                 mainBinding.TextInputEditTextL3.text.toString())
+        }
+
+        mainBinding.buttonReset.setOnClickListener {
+            mainViewModel.reset()
         }
 
     }

@@ -5,4 +5,5 @@
     <string name="lado3">Escriba el valor del lado 3</string>
     <string name="calcular">Calcular perimetro</string>
     <string name="perimetro">"Perimetro = "</string>
+    <string name="reset">Resetear</string>
 </resources>

@@ -26,6 +26,5 @@ class MainActivity : AppCompatActivity() {
             val intent: Intent = Intent (this , PerimeterSquareActivity::class.java)
             startActivity(intent)
         }
-
     }
 }

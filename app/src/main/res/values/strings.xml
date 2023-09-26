@@ -4,4 +4,11 @@
     <string name="side">longitud de un lado</string>
     <string name="calculate_perimeter">calcular perimetro</string>
     <string name="result">Resultado</string>
+    <string name="lado1">Escriba el valor del lado 1</string>
+    <string name="lado2">Escriba el valor del lado 2</string>
+    <string name="lado3">Escriba el valor del lado 3</string>
+    <string name="calcular">Calcular perimetro</string>
+    <string name="perimetro">"Perimetro = "</string>
+    <string name="reset">Resetear</string>
+    <string name="perimetroTria">Perimetro triángulo</string>
 </resources>

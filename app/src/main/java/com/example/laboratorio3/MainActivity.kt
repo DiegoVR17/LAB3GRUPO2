@@ -12,6 +12,8 @@ import com.google.android.material.snackbar.Snackbar
 class MainActivity : AppCompatActivity() {
 
     private lateinit var mainBinding: ActivityMainBinding
+    private lateinit var mainViewModel: MainViewModel
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         installSplashScreen()
@@ -24,5 +26,11 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        mainViewModel = ViewModelProvider(this)[MainViewModel::class.java]
+
+        mainBinding.PSButton.setOnClickListener {
+            val intent: Intent = Intent (this , PerimeterSquareActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

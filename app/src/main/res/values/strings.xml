@@ -1,5 +1,9 @@
 <resources>
     <string name="app_name">Laboratorio3</string>
+    <string name="perimeter_square">Perimetro de un cuadrado</string>
+    <string name="side">longitud de un lado</string>
+    <string name="calculate_perimeter">calcular perimetro</string>
+    <string name="result">Resultado</string>
     <string name="lado1">Escriba el valor del lado 1</string>
     <string name="lado2">Escriba el valor del lado 2</string>
     <string name="lado3">Escriba el valor del lado 3</string>

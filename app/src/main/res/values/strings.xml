@@ -7,7 +7,7 @@
     <string name="lado1">Escriba el valor del lado 1</string>
     <string name="lado2">Escriba el valor del lado 2</string>
     <string name="lado3">Escriba el valor del lado 3</string>
-    <string name="calcular">Calcular perimetro</string>
+    <string name="calcular">Calcular perimetro triángulo</string>
     <string name="perimetro">"Perimetro = "</string>
     <string name="reset">Resetear</string>
     <string name="perimetroTria">Perimetro triángulo</string>

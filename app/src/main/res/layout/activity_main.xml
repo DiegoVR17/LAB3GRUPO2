@@ -24,6 +24,7 @@
         android:layout_marginTop="372dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent" 
+        android:text="@string/calcular"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

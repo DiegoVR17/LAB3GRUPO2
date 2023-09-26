@@ -1,5 +1,6 @@
 package com.example.laboratorio3
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
@@ -11,7 +12,6 @@ import com.google.android.material.snackbar.Snackbar
 class MainActivity : AppCompatActivity() {
 
     private lateinit var mainBinding: ActivityMainBinding
-    private lateinit var mainViewModel: MainViewModel
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         installSplashScreen()
@@ -19,42 +19,10 @@ class MainActivity : AppCompatActivity() {
         val view = mainBinding.root
         setContentView(view)
 
-        mainViewModel = ViewModelProvider(this)[MainViewModel::class.java]
-
-        val perimeterObserver = Observer<String>{result ->
-            mainBinding.textViewResult.text = result
-        }
-
-        mainViewModel.perimeter.observe(this,perimeterObserver)
-
-        val resetObserver = Observer<String>{reset ->
-            mainBinding.TextInputEditTextL1.setText(reset)
-            mainBinding.TextInputEditTextL2.setText(reset)
-            mainBinding.TextInputEditTextL3.setText(reset)
-        }
-
-        mainViewModel.reset.observe(this,resetObserver)
-
-        val errorMsgObserver = Observer<String>{errorMsg ->
-            Snackbar.make(view,errorMsg, Snackbar.LENGTH_INDEFINITE)
-                .setAction("Continuar"){}
-                .show()
-        }
-
-
-        mainViewModel.errorMsg.observe(this,errorMsgObserver)
-
-        mainBinding.buttonCalcu.setOnClickListener {
-            mainViewModel.calculatePerimeter(mainBinding.TextInputEditTextL1.text.toString(),
-                mainBinding.TextInputEditTextL2.text.toString(),
-                mainBinding.TextInputEditTextL3.text.toString())
-        }
-
-        mainBinding.buttonReset.setOnClickListener {
-            mainViewModel.reset()
+        mainBinding.buttonPerimeter.setOnClickListener {
+            val intent = Intent(this,PerimeterTrianActivity::class.java)
+            startActivity(intent)
         }
 
     }
-
-
 }

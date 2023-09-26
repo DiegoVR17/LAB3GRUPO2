@@ -4,7 +4,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class MainViewModel: ViewModel()  {
+class PerimeterTrianViewModel: ViewModel()  {
 
     val perimeter: MutableLiveData<String> by lazy {
         MutableLiveData<String>()
@@ -28,7 +28,6 @@ class MainViewModel: ViewModel()  {
             perimeter.value = perimeterValue.toString()
         }
     }
-
     fun reset() {
         reset.value = " "
         perimeter.value = " "

@@ -21,13 +21,14 @@ class MainActivity : AppCompatActivity() {
     private lateinit var mainBinding: ActivityMainBinding
     private lateinit var mainViewModel: MainViewModel
 
-
-    private lateinit var mainBinding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        installSplashScreen()
         mainBinding = ActivityMainBinding.inflate(layoutInflater)
         val view = mainBinding.root
         setContentView(view)
+
+        mainViewModel = ViewModelProvider(this)[MainViewModel::class.java]
 
         mainBinding.PerimeterCircleButton.setOnClickListener {
             val intent = Intent(this,PerimeterCircleActivity::class.java)
@@ -35,17 +36,15 @@ class MainActivity : AppCompatActivity() {
         }
 
 
-        installSplashScreen()
-        mainBinding = ActivityMainBinding.inflate(layoutInflater)
-        val view = mainBinding.root
-        setContentView(view)
+     
+        
 
         mainBinding.buttonPerimeter.setOnClickListener {
             val intent = Intent(this,PerimeterTrianActivity::class.java)
             startActivity(intent)
         }
 
-        mainViewModel = ViewModelProvider(this)[MainViewModel::class.java]
+       
 
         mainBinding.PSButton.setOnClickListener {
             val intent: Intent = Intent (this , PerimeterSquareActivity::class.java)

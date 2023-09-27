@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Laboratorio3</string>
+    <string name="value_set_text">Ingresa el lado del cuadrado</string>
+    <string name="value_title">Area de un Cuadrado</string>
+    <string name="vlalue_button">Calcular</string>
+    <string name="value_result">Result</string>
 </resources>

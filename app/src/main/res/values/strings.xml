@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Laboratorio3</string>
+    <string name="Perimeter_circle">Perimetro de un circulo</string>
+    <string name="perimeter_layout">Ingresar el valor del radio</string>
+    <string name="circle_perimeter_button">Calcular perimetro</string>
+    <string name="result_circle_perimeter">Resultado del perimetro</string>
 </resources>

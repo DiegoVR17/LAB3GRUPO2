@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Laboratorio3</string>
+    <string name="base">Ingrese la base del triangulo</string>
+    <string name="altura">Ingrese la altura del triangulo</string>
+    <string name="calcular">Calcular</string>
+    <string name="resultado">Resultado</string>
+    <string name="view_area_triangulo">Consultar área del triangulo</string>
 </resources>

@@ -11,4 +11,8 @@
     <string name="perimetro">"Perimetro = "</string>
     <string name="reset">Resetear</string>
     <string name="perimetroTria">Perimetro triángulo</string>
+    <string name="value_button">Calcule</string>
+    <string name="value_result">result</string>
+    <string name="value_set_text">ingresa el lado del cuadrado</string>
+    <string name="value_title">Area Square</string>
 </resources>

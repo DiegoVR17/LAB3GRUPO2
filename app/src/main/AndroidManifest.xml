@@ -16,10 +16,6 @@
             android:name=".PerimeterCircleActivity"
             android:exported="false" >
         </activity>
-
-        <activity
-            android:name=".PerimeterSquareViewModel"
-            android:exported="false" />
         <activity
             android:name=".PerimeterSquareActivity"
             android:exported="false" />

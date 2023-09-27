@@ -32,5 +32,11 @@ class MainActivity : AppCompatActivity() {
             val intent: Intent = Intent (this , PerimeterSquareActivity::class.java)
             startActivity(intent)
         }
+
+        mainBinding.buttonSquareArea.setOnClickListener {
+            val intent = Intent(this,SquareAreaActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 }

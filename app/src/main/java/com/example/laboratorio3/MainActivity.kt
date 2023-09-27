@@ -6,11 +6,21 @@ package com.example.laboratorio3
 
 import android.app.Activity
 import android.content.Intent
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.laboratorio3.databinding.ActivityMainBinding
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
+import androidx.lifecycle.ViewModelProvider
+import com.example.laboratorio3.databinding.ActivityMainBinding
+import androidx.lifecycle.Observer
+import com.google.android.material.snackbar.Snackbar
 
 class MainActivity : AppCompatActivity() {
+
+    private lateinit var mainBinding: ActivityMainBinding
+    private lateinit var mainViewModel: MainViewModel
+
 
     private lateinit var mainBinding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,6 +34,28 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+
+        installSplashScreen()
+        mainBinding = ActivityMainBinding.inflate(layoutInflater)
+        val view = mainBinding.root
+        setContentView(view)
+
+        mainBinding.buttonPerimeter.setOnClickListener {
+            val intent = Intent(this,PerimeterTrianActivity::class.java)
+            startActivity(intent)
+        }
+
+        mainViewModel = ViewModelProvider(this)[MainViewModel::class.java]
+
+        mainBinding.PSButton.setOnClickListener {
+            val intent: Intent = Intent (this , PerimeterSquareActivity::class.java)
+            startActivity(intent)
+        }
+
+        mainBinding.buttonSquareArea.setOnClickListener {
+            val intent = Intent(this,SquareAreaActivity::class.java)
+            startActivity(intent)
+        }
 
     }
 }

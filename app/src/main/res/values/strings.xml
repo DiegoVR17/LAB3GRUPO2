@@ -4,4 +4,19 @@
     <string name="perimeter_layout">Ingresar el valor del radio</string>
     <string name="circle_perimeter_button">Calcular perimetro</string>
     <string name="result_circle_perimeter">Resultado del perimetro</string>
+    <string name="perimeter_square">Perimetro de un cuadrado</string>
+    <string name="side">longitud de un lado</string>
+    <string name="calculate_perimeter">calcular perimetro</string>
+    <string name="result">Resultado</string>
+    <string name="lado1">Escriba el valor del lado 1</string>
+    <string name="lado2">Escriba el valor del lado 2</string>
+    <string name="lado3">Escriba el valor del lado 3</string>
+    <string name="calcular">Calcular perimetro triángulo</string>
+    <string name="perimetro">"Perimetro = "</string>
+    <string name="reset">Resetear</string>
+    <string name="perimetroTria">Perimetro triángulo</string>
+    <string name="value_button">Calcule</string>
+    <string name="value_result">result</string>
+    <string name="value_set_text">ingresa el lado del cuadrado</string>
+    <string name="value_title">Area Square</string>
 </resources>

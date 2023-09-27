@@ -18,8 +18,22 @@
         </activity>
 
         <activity
+            android:name=".PerimeterSquareViewModel"
+            android:exported="false" />
+        <activity
+            android:name=".PerimeterSquareActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PerimeterTrianActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SquareAreaActivity"
+            android:exported="false" />
+
+        <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/Theme.APISplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />

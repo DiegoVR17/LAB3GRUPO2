@@ -11,6 +11,7 @@ class PerimeterCircleActivity : AppCompatActivity() {
     private lateinit var perimeterCircleBinding:ActivityPerimeterCircleBinding
     // Declarar el ViewModel con el de CircleAreaViewModel
     private lateinit var perimeterCircleViewModel:PerimeterCircleViewModel
+    //onclick
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         perimeterCircleBinding = ActivityPerimeterCircleBinding.inflate(layoutInflater)

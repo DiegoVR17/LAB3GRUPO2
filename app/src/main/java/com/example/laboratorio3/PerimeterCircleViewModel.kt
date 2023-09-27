@@ -4,6 +4,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
 
+
 class PerimeterCircleViewModel:ViewModel() {
     // crear LiveData
     val perimeter: MutableLiveData<String> by lazy {

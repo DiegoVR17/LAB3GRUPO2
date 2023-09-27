@@ -6,7 +6,6 @@ package com.example.laboratorio3
 
 import android.app.Activity
 import android.content.Intent
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.laboratorio3.databinding.ActivityMainBinding
